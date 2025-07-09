@@ -1,0 +1,1 @@
+// Placeholder da pasta 'models' – só pra manter a estrutura no repositório.
