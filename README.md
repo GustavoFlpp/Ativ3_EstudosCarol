@@ -5,9 +5,18 @@ Este repositório contém a estrutura inicial do projeto **SGA 2.0**, desenvolvi
 
 ---
 
-## 📐 Arquitetura Adotada: Camadas (MVC)
+## 🚀 Tecnologias utilizadas
 
-A estrutura está organizada em diretórios separados por responsabilidade:
+- [Node.js](https://nodejs.org/) – Ambiente de execução
+- [TypeScript](https://www.typescriptlang.org/) – Superset de JavaScript com tipagem
+- [ts-node](https://typestrong.org/ts-node/) – Executa arquivos `.ts` diretamente sem build
+- [npm](https://www.npmjs.com/) – Gerenciador de pacotes
+
+> Todas as ferramentas são instaladas automaticamente via `npm install`.
+
+---
+
+## 📐 Estrutura de Pastas (Arquitetura em Camadas)
 
 ```
 src/
@@ -24,36 +33,34 @@ src/
 
 ---
 
-## 🚀 Como executar o projeto
+## ⚙️ Instalação e uso
 
+### 1. Clonar o repositório
 ```bash
-# Instalar as dependências
-npm install
-
-# Compilar o projeto
-npx tsc
-
-# O código compilado ficará em: /dist
+git clone https://github.com/seu-usuario/SGA2.0.git
+cd SGA2.0
 ```
 
-> O projeto ainda não possui lógica executável — o foco aqui é a estrutura.
+### 2. Instalar as dependências
+```bash
+npm install
+```
+
+### 3. Executar o projeto com ts-node
+```bash
+npx ts-node src/index.ts
+```
+
+> Ou, se estiver configurado no `package.json`:
+```bash
+npm run dev
+```
 
 ---
 
 ## 🧠 Por que essa estrutura?
 
-- 📦 **Organização clara e separação de responsabilidades**
-- 📈 **Facilidade de manutenção e escalabilidade**
-- 👨‍💻 **Padronização compatível com projetos reais**
-- 🔒 **Uso de TypeScript para maior segurança e legibilidade**
-
----
-
-## 📄 Sobre esta entrega
-
-Esta entrega cumpre os seguintes critérios propostos na Aula 3:
-
-- ✅ Estrutura de pastas com base em arquitetura
-- ✅ Tipagem básica em `index.ts`
-- ✅ Arquitetura justificada neste README
-- ✅ Nenhuma lógica de negócio implementada
+- 📦 Organização clara e separação de responsabilidades
+- 📈 Preparação para escalabilidade e manutenção futura
+- 👨‍💻 Arquitetura em camadas (MVC) amplamente adotada
+- 🔒 Uso de TypeScript para maior segurança e legibilidade
